@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application' 
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // implementation files('lib/allpairs4j-1.0.0.jar')
+   implementation 'io.github.pavelicii:allpairs4j:1.0.0'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/main/java'
+        }
+    }
+}
+mainClassName = 'main.java.Main' // Set the correct main class name here
